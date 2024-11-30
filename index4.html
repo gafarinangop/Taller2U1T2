@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fee8e8;
+        }
+        .calculator {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="number"]{
+            margin: 5px;
+            padding: 10px;
+            font-size: 12px;
+            width: 120px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 12px;
+            width: 120px;
+            background-color: #fee8e8;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight:lighter;
+        }
+        .botones{
+            margin-top: 20px;
+            font-size: 18px;
+            background: #fee8e8;
+            transition:ease;
+        }
+        button:hover {
+            background-color: #ffffff;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #0e3539;
+          }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <center><h1>Calculadora</h1>
+        <p>Ingrese el primer número:</p>
+        <input type="number" id="num1">
+        <p>Ingrese el segundo número:</p>
+        <input type="number" id="num2">
+        <br/>
+        <p>Elija la operación:</p></center>
+        <div class="botones">
+            <button onclick="sumar()">Suma</button>
+            <button onclick="restar()">Resta</button>
+            <button onclick="multiplicar()">Multiplicación</button>
+            <button onclick="dividir()">División</button>
+        </div>
+        <div class="result">
+            <p id="resultado">Resultado: </p>
+        </div>
+        <p>Integrantes: Anguisaca Andrea- Farinango Grace- Morales Josselyn- Nuñez Alejandro- Viteri Ian</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
